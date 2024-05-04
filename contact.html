@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>  
+    <script src="js/alertdialog.js"></script>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="videos/0426.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <form id="registration-form" action="connect.php" method="post">
+            <div class="form-group">
+                <input type="text" id="firstname" name="firstname" required>
+                <span>First Name</span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="lastname" name="lastname" required>
+                <span>Last Name</span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="email" name="email" required>
+                <span>Email address</span>
+            </div>
+            <div class="form-group"> 
+                <input type="text" id="phoneno" name="phoneno" required>
+                <span>Phone number</span>
+            </div>
+            <div class="form-group">
+                <textarea name="messages" name="messages" rows="7" required></textarea>
+                <span>Message</span>
+            </div>
+            <button onclick="showConfirm()">Submit</button> 
+              
+        </form>
+    </div>
+    <!-- <div class="popwindow" id="popup">
+        <div class="poptick">
+            <img src="images/tick.png" alt="tick">
+            <h2>Record saved successfully</h2>
+            <button type="reset">OK</button>
+        </div>
+    </div>
+    <script src="js/pop.js"></script> -->
+    <!-- Footer -->
+    <div class="bottom-bar">
+        <p>&copy; 2024 ECSC. All rights reserved</p>
+    </div>      
+</body>
+</html>

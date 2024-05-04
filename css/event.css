@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+.container {
+    position: absolute;;
+    max-width: 800px;
+    height: 500px;
+    margin-left: 350px;
+    margin-top: 120px;
+    padding: 20px;
+    background-color: #121212;
+    box-shadow: 0 2px 8px rgb(238, 103, 103);
+    border-radius: 8px;
+}
+h1 ,h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.events {
+    margin-bottom: 40px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.event {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+
+    .date {
+        font-weight: bold;
+        color: #ffffff;
+    }
+    .description {
+        color: #ffffff;
+    }
+}
+.event:last-child {
+    border-bottom: none;
+}
+
+.upcoming-events {
+    text-align: center;
+    margin-top: 40px;
+
+    p {
+        font-style: italic;
+        color: #ffffff;
+    }
+}
+.bottom-bar{
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 650px;
+    p{
+        color: #ffffff;
+    }
+}
+
+/* For mobiles */
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 75%;
+        height: 65%;
+        margin-left: 25px;
+
+        .events{
+            margin-bottom:0px;
+        }
+    }
+    .bottom-bar{
+        margin-left: 60px;
+        margin-top: 680px;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 100%; 
+        height: auto;
+        margin-left: 95px;  
+
+        .events {
+            margin-bottom: 20px; 
+        }
+        .upcoming-events{
+            margin-bottom: -25px;    
+        }
+    }
+    .bottom-bar {
+        width: 100%;  
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        margin-left: 396px;
+        padding: 10px 0;  
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.1); 
+
+        p{
+            margin-bottom: 0px;
+        }
+    }
+}

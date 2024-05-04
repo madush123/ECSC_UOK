@@ -1,0 +1,669 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Description */
+.box{
+    position: absolute;
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 17px;
+    width: 925px;
+    height: 385px;
+    margin-top: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgb(230, 132, 158);
+}
+.content{
+    position: absolute;
+    text-align: justify;
+    background-color: #121212;
+    padding: 20px;
+    font-size: 17px;
+    width: 900px;
+    height: 360px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+    border-radius: 20px;
+}
+
+/* vision and mission */
+
+.vm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 600px;
+    background-color: #121212;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    column-gap: 90px;
+    border-radius: 10px;
+
+    .vision, .mission{
+        background-color: #121212;
+        width: 300px;
+        height: 220px;
+        border-radius: 10px;
+        padding-top: 10px;
+        margin-top: 100px;
+        box-shadow: 0 0 20px 0 rgb(57, 243, 236);
+
+        h3{
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        p{
+            font-size: 17px;
+            padding: 10px;
+        }
+    }
+
+    img{
+        width: 40%;
+        height: 120%;
+        margin-top: 100px;
+        padding-left: 10px; 
+        padding-bottom: 10px; 
+    }
+}
+
+/* contact */
+
+.contactbox{
+    background-color: #121212;
+    position: absolute;
+    margin-top: 1500px;
+    margin-left: 10px;
+    width: 1500px;
+    height: 700px;
+    justify-content: center;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(57, 243, 236);
+
+    .mainbox{
+        background-color: #121212;
+        position: absolute;
+        width: 1500px;
+        height: 600px;
+        column-gap: 60px;
+        border-radius: 10px;
+
+        h1{
+            margin-left: 650px;
+            color: #ffffff;
+            font-size: 3em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+        }
+
+        .contact-list{
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            flex-wrap: wrap;
+            margin-left: 80px;
+
+            .contact-item{
+                background-color: #121212;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 20px;
+                height: 400px;
+                width: 400px;
+                text-align: left;
+                /* box-shadow: 0 0px 5px 0 rgb(57, 243, 236);  */
+                border-radius: 20px;
+                float: left;
+                /* text-align: center; */
+
+                p{
+                    font-size: 25px;
+                    text-align: center;
+                }
+
+                img{
+                    margin-left: 20px;
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .lopoem{
+                    display: flex;
+                    margin-top: 40px;
+                    gap: 1em;
+
+                    a{
+                        margin-left: 10px;
+                        margin-top: 10px;
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+
+                .alinks{
+                    margin-top: 50px;
+                    display: flex;
+                    font-size: 20px;
+                    flex-direction: column;
+                    gap: 3em;
+
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        text-align: center;
+                    }
+                }
+
+                .circle{
+                    border-radius: 100px;
+                    background-color: #121212;
+                    width: 200px;
+                    height: 200px;
+                    margin: 0 auto;
+                    /* box-shadow: 0 0 5px 0 rgb(57, 243, 236); */
+
+                    img{
+                        margin-left: 10px;
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+/* Heading */
+h2 {
+    position: absolute;
+    margin-top: 170px;
+    font-size: 4em;
+    letter-spacing: 9px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate 
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:#0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+@media (max-width: 600px) {
+    header, footer, main {
+        padding: 10px;
+    }
+    
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Bottom of the page space */
+.space {
+    background-color: #121212;
+    position: absolute;
+    width:10px;
+    height: 10px;
+    margin-top: 2250px;
+}
+
+
+/* Socialmedia Icons */
+.contactbox .mainbox .social-list{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 500px;
+}
+
+.contactbox .mainbox ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+    text-align: center;
+
+    a{
+        color: #666;
+    }
+}
+
+.contactbox .mainbox ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+}
+
+.contactbox .mainbox ul li:nth-child(1):before{
+    background: #4267B2;
+}
+
+.contactbox .mainbox ul li:nth-child(2):before{
+    background: #1DA1F2;
+}
+
+.contactbox .mainbox ul li:nth-child(3):before{
+    background: #E1306C;
+}
+
+.contactbox .mainbox ul li:nth-child(4):before{
+    background: #2867B2;
+}
+
+.contactbox .mainbox ul li:nth-child(5):before{
+    background: #ff0000;
+}
+
+.contactbox .mainbox ul li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+}
+
+.contactbox .mainbox ul li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px #4267B2;
+}
+
+.contactbox .mainbox ul li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #1DA1F2;
+}
+
+.contactbox .mainbox ul li:nth-child(3):hover:before{
+    box-shadow: 0 0 15px #E1306C;
+}
+
+.contactbox .mainbox ul li:nth-child(4):hover:before{
+    box-shadow: 0 0 15px #2867B2;
+}
+
+.contactbox .mainbox ul li:nth-child(5):hover:before{
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.contactbox .mainbox ul li:nth-child(1):hover {
+    color: #456cba;
+    box-shadow: 0 0 15px #4267B2;
+    text-shadow: 0 0 15px #4267B2;
+}
+
+.contactbox .mainbox ul li:nth-child(2):hover{
+    color: #26a4f2;
+    box-shadow: 0 0 15px #1DA1F2;
+    text-shadow: 0 0 15px #1DA1F2;
+}
+
+.contactbox .mainbox ul li:nth-child(3):hover{
+    color: #e23670;
+    box-shadow: 0 0 15px #E1306C;
+    text-shadow: 0 0 15px #E1306C;
+}
+
+.contactbox .mainbox ul li:nth-child(4):hover{
+    color: #2a6cbb;
+    box-shadow: 0 0 15px #2867B2;
+    text-shadow: 0 0 15px #2867B2;
+}
+
+.contactbox .mainbox ul li:nth-child(5):hover{
+    color: #ff1a1a;
+    box-shadow: 0 0 15px #ff0000;
+    text-shadow: 0 0 15px #ff0000;
+}
+
+/* Footer */
+.bottom-bar{
+    position: absolute;
+    margin-top: 2220px;
+    margin-left: 650px;
+    p{
+        color: #ffffff;
+    }
+}
+
+/* For mobile */
+@media only screen and (max-width: 767px) {
+    body{
+        width: 330px;
+    }
+    #bob {
+        .box{
+            width: 293px;
+            height: 350px;
+            box-shadow: 0 0 9px 0 rgb(230, 132, 158);
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: 0px;
+            margin-top: 80px;
+
+            .content{
+                width: 290px;
+                height: auto;
+                padding-left: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-right: 10px;
+            
+
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .vm{
+            margin-top: 570px;
+            gap: 1em;
+            margin-left: 7px;
+            width: 330px;
+            img{
+                width: 80px;
+                height: 100px;
+                margin-top: 50px;
+                margin-left: 0px;
+                padding-left: 0px;
+            }
+            .vision, .mission {
+                height: 170px;
+                margin-top: 0px;
+                box-shadow: 0 0 5px 0 rgb(57, 243, 236);
+                p {
+                    font-size: 10px;
+                    padding: 5px;
+                }
+                h3{
+                    margin-top: 1px;
+                    font-size: 10px;
+                }
+            }
+            .mission{    
+                margin-right: 0px;
+                margin-left: 0px;
+                width: 100px;
+            }
+            .vision{
+                margin-left: 0px;
+                width: 100px;
+            }
+            
+        }
+
+        h2{
+            font-size: 30px;
+        }
+
+        .contactbox{
+            margin-top: 897px;
+            width: 330px;
+            height: 1127px;
+            gap: 50px;
+            box-shadow: 0 0 5px 0 rgb(57, 243, 236);
+
+            .mainbox{
+                width: 324px;
+                h1{
+                    margin-left: 86px;
+                    font-size: 30px;
+                    width: 150px;
+                }
+                .contact-list{
+                    flex-direction: column;
+                    margin-left:40px;             
+                    margin-top: 0px;
+                    padding-top: 0px;   
+                    gap: 1em;
+            
+
+                    .contact-item{
+                        width: 200px;
+                        height: 200px;
+                        margin-left: 0px;
+                        padding-top: 20px;
+                        margin-top: 0px;
+                        padding-right: 60px;
+                        margin-bottom: 40px;
+                        .circle{
+                            width:80px;
+                            height: 80px;
+                            margin-left: 54px;
+                            img{
+                                width: 80px;
+                                height: 80px;
+                            }
+                            p{
+                                margin-bottom: 0px;
+                            }
+
+                        }
+
+                        .alinks{
+                            margin-top: 10px;
+                            gap: 2em;
+
+                            a{
+                                font-size: 18px;
+                            }
+                        }
+
+                        p{
+                            font-size: 20px;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                            padding-top: 25px;
+                        }
+                        .lopoem{
+                            img{
+                                margin-left: 0px;
+                                width: 40px;
+                                height: 40px;
+                            }
+
+                            a{
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+                .social-list{  
+                    margin-left: 0px;
+                    padding-left: 14px;
+                    padding-right: 30px;
+                    padding-top: 80px;
+                    margin-top: 28px;
+                    gap: 12px;
+
+                    li{
+                        font-size: 26px;
+                        height: 49px;
+                        width: 49px;
+                        line-height: 51px;
+                        padding-left: 11px;
+                        padding-right: 11px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+
+                }
+            }
+        }
+        .space{
+            margin-top: 2100px;
+        }
+        .bottom-bar{
+            margin-left: 60px;
+            margin-top: 2048px; 
+        }
+    }
+}
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    
+    #bob {
+        .box{
+            margin-top: 120px;
+        }
+        .vm{
+            column-gap: 35px;
+            width: 1024px;
+            .vision{
+                margin-left: 67px;
+            }
+            .vision, .mission{
+                width: 194px;
+                height: 266px;
+            }
+            img{
+                height: 100%;
+                padding-bottom: 0px;
+                margin-top: 25px;
+            }
+        }
+        .contactbox{
+            margin-top: 1260px;
+            width: 998px;
+            height: 600px;
+            gap: 50px;
+            box-shadow: 0 0 5px 0 rgb(57, 243, 236);
+
+            .mainbox{
+                width: 324px;
+                h1{
+                    margin-left: 430px;
+                    font-size: 30px;
+                    width: 150px;
+                }
+                .contact-list{
+                    display: flex;
+                    flex-direction: row;  
+                    flex-wrap: nowrap; 
+                    gap: 8em;
+            
+
+                    .contact-item{
+                        width: 186px;
+                        height: 200px;
+                        margin-left: 0px;
+                        padding-top: 34px;
+                        margin-top: 0px;
+                        padding-right: 60px;
+                        margin-bottom: 40px;
+                        .circle{
+                            width:120px;
+                            height: 120px;
+                            margin-left: 22px;
+                            padding-right: 26px;
+                            img{
+                                width: 120px;
+                                height: 120px;
+                            }
+                            p{
+                                margin-bottom: 31px;
+                            }
+
+                        }
+
+                        .alinks{
+                            margin-top: 10px;
+                            gap: 2em;
+
+                            a{
+                                font-size: 18px;
+                            }
+                        }
+
+                        p{
+                            font-size: 20px;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                            padding-top: 25px;
+                        }
+                        .lopoem{
+                            img{
+                                margin-left: 0px;
+                                width: 40px;
+                                height: 40px;
+                            }
+
+                            a{
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+                .social-list{   
+                    margin-left: 358px;
+                    padding-left: 14px;
+                    padding-right: 30px;
+                    padding-top: 80px;
+                    margin-top: 28px;
+                    gap: 12px;
+
+                    li{
+                        font-size: 26px;
+                        height: 49px;
+                        width: 49px;
+                        line-height: 51px;
+                        padding-left: 11px;
+                        padding-right: 11px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+
+                }
+            }
+        }
+        .space{
+            margin-top: 1922px;
+        }
+        .bottom-bar{
+            margin-left: 406px;
+            margin-top: 1882px; 
+        }
+    }
+}
